@@ -1,7 +1,7 @@
 package exercises;
 import java.util.*;
 
-public class Functions {
+public class Exercise1 {
 	public static void main(String[] args) {
 		int n = 0;
 		Scanner sc = new Scanner(System.in);
@@ -10,7 +10,8 @@ public class Functions {
 		eco(n);
 		sc.close();
 	}
-	public static void eco(int n) {
+	
+	private static void eco(int n) {
 		for(int i = 1; i <= n ; i++) {
 			System.out.println("Eco");
 		}
