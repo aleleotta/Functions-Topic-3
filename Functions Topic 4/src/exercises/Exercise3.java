@@ -6,14 +6,14 @@ public class Exercise3 {
 		int x, y;
 		int option;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("First number: ");
-		x = sc.nextInt();
-		System.out.print("Second number: ");
-		y = sc.nextInt();
 		System.out.println("Option 1: Cilinder area");
 		System.out.println("Option 2: Cilinder volume");
 		System.out.print("Select option: ");
 		option = sc.nextInt();
+		System.out.print("First number: ");
+		x = sc.nextInt();
+		System.out.print("Second number: ");
+		y = sc.nextInt();
 		formulas(option, x, y);
 		sc.close();
 	}
