@@ -5,15 +5,24 @@ public class Exercise7 {
 	public static void main(String[] args) {
 		int n;
 		Scanner sc = new Scanner(System.in);
-		System.out.println();
+		System.out.print("Introduce a number: ");
 		n = sc.nextInt();
-		System.out.println(prime(n));
+		System.out.println(primeDivs(n));
 		sc.close();
+	}
+	
+	private static int primeDivs(int n) {
+		int primeDivs = 0;
+		for(int i = 2; i < n; i++) {
+			if(n % i == 0 && prime(i)) {
+				primeDivs++;
+			}
+		}
+		return 0;
 	}
 	
 	private static boolean prime(int n) {
 		boolean prime = true;
-		int div = 0;
 		for(int i = 2; i < n; i++) {
 			if (n % i == 0) {
 				prime = false;
@@ -22,6 +31,7 @@ public class Exercise7 {
 		}
 		return prime;
 	}
+	
 }
 /*Escribe una función a la que se le pase como parámetro
  *un número entero y devuelva el número de divisores primos que tiene.
