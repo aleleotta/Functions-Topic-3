@@ -8,18 +8,18 @@ public class Exercise6 {
 		System.out.print("Introduce a number: ");
 		n = sc.nextInt();
 		System.out.println("Prime number?");
-		System.out.println(esPrimo(n));
+		System.out.println(prime(n));
 		sc.close();
 	}
 	
-	private static boolean esPrimo(int n) {
-		boolean primo = true;
+	private static boolean prime(int n) {
+		boolean prime = true;
 		for(int i = 2; i < n; i++) {
 			if (n % i == 0) {
-				primo = false;
+				prime = false;
 				break;
 			}
 		}
-		return primo;
+		return prime;
 	}
 }
