@@ -10,15 +10,15 @@ public class Exercise7 {
 		System.out.println(primeDivs(n));
 		sc.close();
 	}
-	
+
 	private static int primeDivs(int n) {
 		int primeDivs = 0;
 		for(int i = 2; i < n; i++) {
-			if(n % i == 0 && prime(i)) {
+			if(prime(n) == true) {
 				primeDivs++;
 			}
 		}
-		return 0;
+		return primeDivs;
 	}
 	
 	private static boolean prime(int n) {
